@@ -1,0 +1,16 @@
+{
+    "name": "nitropay-sponsor-node",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc"
+    },
+    "dependencies": {
+        "@types/jws": "^3.2.0",
+        "jws": "^3.2.2"
+    },
+    "devDependencies": {
+        "typescript": "^3.5.1"
+    }
+}
