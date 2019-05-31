@@ -9,7 +9,10 @@ export class Signer {
 
     sign(userInfo: UserInfo): string {
         return sign({
-            header: { alg: 'HS512' },
+            header: {
+                alg: 'HS512',
+                typ: 'JWT',
+            },
             payload: {
                 iss: userInfo.siteId,
                 sub: userInfo.userId,
