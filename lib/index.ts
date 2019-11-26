@@ -17,6 +17,9 @@ export class Signer {
                 iss: userInfo.siteId,
                 sub: userInfo.userId,
                 iat: Math.floor(Date.now() / 1000),
+                name: userInfo.name || '',
+                email: userInfo.email || '',
+                avatar: userInfo.avatar || '',
             },
             secret: this.privateKey,
         });
@@ -26,4 +29,7 @@ export class Signer {
 export interface UserInfo {
     siteId: string;
     userId: string;
+    name: string;
+    email: string;
+    avatar: string;
 }
