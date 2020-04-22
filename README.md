@@ -16,3 +16,5 @@ var token = signer.sign({
     avatar: 'https://s.gravatar.com/avatar/0d3964876826ac9554d88d5a51ea87a2?s=80', // optional
 });
 ```
+
+You can use `getUserSubscription(userID)` to look up subscription info for a user.
